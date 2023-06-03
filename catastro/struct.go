@@ -244,6 +244,52 @@ type ConsultaDNPRCResponse struct {
 				} `json:"dfcons"`
 			} `json:"lcons"`
 		} `json:"bico"`
+		Lrcdnp struct {
+			Rcdnp []struct {
+				Rc struct {
+					Pc1 string `json:"pc1"`
+					Pc2 string `json:"pc2"`
+					Car string `json:"car"`
+					Cc1 string `json:"cc1"`
+					Cc2 string `json:"cc2"`
+				} `json:"rc"`
+				Dt struct {
+					Loine struct {
+						Cp string `json:"cp"`
+						Cm string `json:"cm"`
+					} `json:"loine"`
+					Cmc  string `json:"cmc"`
+					Np   string `json:"np"`
+					Nm   string `json:"nm"`
+					Locs struct {
+						Lous struct {
+							Lourb struct {
+								Dir struct {
+									Cv  string `json:"cv"`
+									Tv  string `json:"tv"`
+									Nv  string `json:"nv"`
+									Pnp string `json:"pnp"`
+									Snp string `json:"snp"`
+								} `json:"dir"`
+								Loint struct {
+									Es string `json:"es"`
+									Pt string `json:"pt"`
+									Pu string `json:"pu"`
+								} `json:"loint"`
+								Dp string `json:"dp"`
+								Dm string `json:"dm"`
+							} `json:"lourb"`
+						} `json:"lous"`
+					} `json:"locs"`
+				} `json:"dt"`
+				Debi struct {
+					Luso string `json:"luso"`
+					Sfc  string `json:"sfc"`
+					Cpt  string `json:"cpt"`
+					Ant  string `json:"ant"`
+				} `json:"debi"`
+			} `json:"rcdnp"`
+		} `json:"lrcdnp"`
 		ErrorList ErrorList `json:"lerr"`
 	} `json:"consulta_dnprcResult"`
 }
@@ -318,6 +364,52 @@ type ConsultaDNPPPResponse struct {
 				} `json:"dspr"`
 			} `json:"lspr"`
 		} `json:"bico"`
+		Lrcdnp struct {
+			Rcdnp []struct {
+				Rc struct {
+					Pc1 string `json:"pc1"`
+					Pc2 string `json:"pc2"`
+					Car string `json:"car"`
+					Cc1 string `json:"cc1"`
+					Cc2 string `json:"cc2"`
+				} `json:"rc"`
+				Dt struct {
+					Loine struct {
+						Cp string `json:"cp"`
+						Cm string `json:"cm"`
+					} `json:"loine"`
+					Cmc  string `json:"cmc"`
+					Np   string `json:"np"`
+					Nm   string `json:"nm"`
+					Locs struct {
+						Lous struct {
+							Lourb struct {
+								Dir struct {
+									Cv  string `json:"cv"`
+									Tv  string `json:"tv"`
+									Nv  string `json:"nv"`
+									Pnp string `json:"pnp"`
+									Snp string `json:"snp"`
+								} `json:"dir"`
+								Loint struct {
+									Es string `json:"es"`
+									Pt string `json:"pt"`
+									Pu string `json:"pu"`
+								} `json:"loint"`
+								Dp string `json:"dp"`
+								Dm string `json:"dm"`
+							} `json:"lourb"`
+						} `json:"lous"`
+					} `json:"locs"`
+				} `json:"dt"`
+				Debi struct {
+					Luso string `json:"luso"`
+					Sfc  string `json:"sfc"`
+					Cpt  string `json:"cpt"`
+					Ant  string `json:"ant"`
+				} `json:"debi"`
+			} `json:"rcdnp"`
+		} `json:"lrcdnp"`
 		ErrorList ErrorList `json:"lerr"`
 	} `json:"consulta_dnpppResult"`
 }
