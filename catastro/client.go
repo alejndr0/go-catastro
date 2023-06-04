@@ -2,7 +2,6 @@ package catastro
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 )
 
@@ -28,7 +27,7 @@ func getJson(url string, queryparams map[string]string, target Response) error {
 
 	r, err := client.Do(req)
 	if err != nil {
-		log.Fatalln(err)
+		return err
 	}
 	defer r.Body.Close()
 
