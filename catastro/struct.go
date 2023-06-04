@@ -1,10 +1,8 @@
 package catastro
 
 type ErrorList struct {
-	Err []struct {
-		Cod  string `json:"cod"`
-		Desc string `json:"des"`
-	} `json:"err"`
+	Cod  string `json:"cod"`
+	Desc string `json:"des"`
 }
 
 type ObtenerProvinciasResponse struct {
@@ -19,7 +17,7 @@ type ObtenerProvinciasResponse struct {
 				Np    string `json:"np"`
 			} `json:"prov"`
 		} `json:"provinciero"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_provincieroResult"`
 }
 
@@ -42,7 +40,7 @@ type ObtenerMunicipiosResponse struct {
 				Nm string `json:"nm"`
 			} `json:"muni"`
 		} `json:"municipiero"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_municipieroResult"`
 }
 
@@ -72,7 +70,7 @@ type ObtenerNumereroResponse struct {
 				Pnp string `json:"pnp"`
 			} `json:"num"`
 		} `json:"nump"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_numereroResult"`
 }
 type ObtenerNumereroRequest struct {
@@ -109,7 +107,7 @@ type ObtenerCallejeroResponse struct {
 				} `json:"dir"`
 			} `json:"calle"`
 		} `json:"callejero"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_callejeroResult"`
 }
 
@@ -144,7 +142,7 @@ type ConsultaDNPLOCResponse struct {
 				} `json:"num"`
 			} `json:"nump"`
 		} `json:"numerero"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_dnplocResult"`
 }
 
@@ -290,7 +288,7 @@ type ConsultaDNPRCResponse struct {
 				} `json:"debi"`
 			} `json:"rcdnp"`
 		} `json:"lrcdnp"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_dnprcResult"`
 }
 
@@ -410,7 +408,7 @@ type ConsultaDNPPPResponse struct {
 				} `json:"debi"`
 			} `json:"rcdnp"`
 		} `json:"lrcdnp"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"consulta_dnpppResult"`
 }
 
@@ -449,7 +447,7 @@ type ConsultaRCCOORResponse struct {
 				Ldt string `json:"ldt"`
 			} `json:"coord"`
 		} `json:"coordenadas"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"Consulta_RCCOORResult"`
 }
 
@@ -494,7 +492,7 @@ type ConsultaRCCOORDistanciaResponse struct {
 				} `json:"lpcd"`
 			} `json:"coordd"`
 		} `json:"coordenadas_distancias"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"Consulta_RCCOOR_DistanciaResult"`
 }
 type ConsultaRCCOORDistanciaRequest struct {
@@ -523,7 +521,7 @@ type ConsultaCPMRCResponse struct {
 				Ldt string `json:"ldt"`
 			} `json:"coord"`
 		} `json:"coordenadas"`
-		ErrorList ErrorList `json:"lerr"`
+		ErrorList []ErrorList `json:"lerr"`
 	} `json:"Consulta_CPMRCResult"`
 }
 

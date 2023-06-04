@@ -19,7 +19,7 @@ func ConsultaRCCOOR(req ConsultaRCCOORRequest) (ConsultaRCCOORResponse, error) {
 }
 func (r ConsultaRCCOORResponse) hasFailed() (bool, error) {
 	if r.ConsultaRCCOORResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaRCCOORResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaRCCOORResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -41,7 +41,7 @@ func ConsultaRCCOORDistancia(req ConsultaRCCOORDistanciaRequest) (ConsultaRCCOOR
 }
 func (r ConsultaRCCOORDistanciaResponse) hasFailed() (bool, error) {
 	if r.ConsultaRCCOORDistanciaResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaRCCOORDistanciaResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaRCCOORDistanciaResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -65,7 +65,7 @@ func ConsultaCPMRC(req ConsultaCPMRCRequest) (ConsultaCPMRCResponse, error) {
 }
 func (r ConsultaCPMRCResponse) hasFailed() (bool, error) {
 	if r.ConsultaCPMRCResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaCPMRCResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaCPMRCResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }

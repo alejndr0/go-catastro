@@ -13,7 +13,7 @@ func ObtenerProvincias() (ObtenerProvinciasResponse, error) {
 }
 func (r ObtenerProvinciasResponse) hasFailed() (bool, error) {
 	if r.ConsultaProvincieroResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaProvincieroResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaProvincieroResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -33,7 +33,7 @@ func ObtenerMunicipios(req ObtenerMunicipiosRequest) (ObtenerMunicipiosResponse,
 }
 func (r ObtenerMunicipiosResponse) hasFailed() (bool, error) {
 	if r.ConsultaMunicipieroResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaMunicipieroResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaMunicipieroResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -57,7 +57,7 @@ func ObtenerNumerero(req ObtenerNumereroRequest) (ObtenerNumereroResponse, error
 }
 func (r ObtenerNumereroResponse) hasFailed() (bool, error) {
 	if r.ConsultaNumereroResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaNumereroResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaNumereroResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -80,7 +80,7 @@ func ObtenerCallejero(req ObtenerCallejeroRequest) (ObtenerCallejeroResponse, er
 }
 func (r ObtenerCallejeroResponse) hasFailed() (bool, error) {
 	if r.ConsultaCallejeroResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaCallejeroResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaCallejeroResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -108,7 +108,7 @@ func ConsultaDNPLOC(req ConsultaDNPLOCRequest) (ConsultaDNPLOCResponse, error) {
 }
 func (r ConsultaDNPLOCResponse) hasFailed() (bool, error) {
 	if r.ConsultaDnplocResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaDnplocResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaDnplocResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -130,7 +130,7 @@ func ConsultaDNPRC(req ConsultaDNPRCRequest) (ConsultaDNPRCResponse, error) {
 }
 func (r ConsultaDNPRCResponse) hasFailed() (bool, error) {
 	if r.ConsultaDnprcResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaDnprcResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaDnprcResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
@@ -153,7 +153,7 @@ func ConsultaDNPPP(req ConsultaDNPPPRequest) (ConsultaDNPPPResponse, error) {
 }
 func (r ConsultaDNPPPResponse) hasFailed() (bool, error) {
 	if r.ConsultaDnpppResult.Control.Cuerr != 0 {
-		return true, errors.New(r.ConsultaDnpppResult.ErrorList.Err[0].Desc)
+		return true, errors.New(r.ConsultaDnpppResult.ErrorList[0].Desc)
 	}
 	return false, nil
 }
