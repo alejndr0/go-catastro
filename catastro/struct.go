@@ -198,6 +198,34 @@ type ConsultaDNPRCResponse struct {
 					Np   string `json:"np"`
 					Nm   string `json:"nm"`
 					Locs struct {
+						Lors struct {
+							Lorus struct {
+								Cpp struct {
+									Cpo string `json:"cpo"`
+									Cpa string `json:"cpa"`
+								} `json:"cpp"`
+								Npa  string `json:"npa"`
+								Cpaj string `json:"cpaj"`
+							} `json:"lorus"`
+							Lourb struct {
+								Dir struct {
+									Cv  string `json:"cv"`
+									Tv  string `json:"tv"`
+									Nv  string `json:"nv"`
+									Pnp string `json:"pnp"`
+									Snp string `json:"snp"`
+									Km  string `json:"km"`
+									Td  string `json:"td"`
+								} `json:"dir"`
+								Loint struct {
+									Es string `json:"es"`
+									Pt string `json:"pt"`
+									Pu string `json:"pu"`
+								} `json:"loint"`
+								Dp string `json:"dp"`
+								Dm string `json:"dm"`
+							} `json:"lourb"`
+						} `json:"lors"`
 						Lous struct {
 							Lourb struct {
 								Dir struct {
@@ -260,6 +288,34 @@ type ConsultaDNPRCResponse struct {
 					Np   string `json:"np"`
 					Nm   string `json:"nm"`
 					Locs struct {
+						Lors struct {
+							Lorus struct {
+								Cpp struct {
+									Cpo string `json:"cpo"`
+									Cpa string `json:"cpa"`
+								} `json:"cpp"`
+								Npa  string `json:"npa"`
+								Cpaj string `json:"cpaj"`
+							} `json:"lorus"`
+							Lourb struct {
+								Dir struct {
+									Cv  string `json:"cv"`
+									Tv  string `json:"tv"`
+									Nv  string `json:"nv"`
+									Pnp string `json:"pnp"`
+									Snp string `json:"snp"`
+									Km  string `json:"km"`
+									Td  string `json:"td"`
+								} `json:"dir"`
+								Loint struct {
+									Es string `json:"es"`
+									Pt string `json:"pt"`
+									Pu string `json:"pu"`
+								} `json:"loint"`
+								Dp string `json:"dp"`
+								Dm string `json:"dm"`
+							} `json:"lourb"`
+						} `json:"lors"`
 						Lous struct {
 							Lourb struct {
 								Dir struct {
@@ -380,6 +436,34 @@ type ConsultaDNPPPResponse struct {
 					Np   string `json:"np"`
 					Nm   string `json:"nm"`
 					Locs struct {
+						Lors struct {
+							Lorus struct {
+								Cpp struct {
+									Cpo string `json:"cpo"`
+									Cpa string `json:"cpa"`
+								} `json:"cpp"`
+								Npa  string `json:"npa"`
+								Cpaj string `json:"cpaj"`
+							} `json:"lorus"`
+							Lourb struct {
+								Dir struct {
+									Cv  string `json:"cv"`
+									Tv  string `json:"tv"`
+									Nv  string `json:"nv"`
+									Pnp string `json:"pnp"`
+									Snp string `json:"snp"`
+									Km  string `json:"km"`
+									Td  string `json:"td"`
+								} `json:"dir"`
+								Loint struct {
+									Es string `json:"es"`
+									Pt string `json:"pt"`
+									Pu string `json:"pu"`
+								} `json:"loint"`
+								Dp string `json:"dp"`
+								Dm string `json:"dm"`
+							} `json:"lourb"`
+						} `json:"lors"`
 						Lous struct {
 							Lourb struct {
 								Dir struct {
