@@ -213,6 +213,7 @@ type ConsultaDNPRCResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 									Km  string `json:"km"`
 									Td  string `json:"td"`
@@ -233,6 +234,7 @@ type ConsultaDNPRCResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 								} `json:"dir"`
 								Loint struct {
@@ -303,6 +305,7 @@ type ConsultaDNPRCResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 									Km  string `json:"km"`
 									Td  string `json:"td"`
@@ -323,6 +326,7 @@ type ConsultaDNPRCResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 								} `json:"dir"`
 								Loint struct {
@@ -451,6 +455,7 @@ type ConsultaDNPPPResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 									Km  string `json:"km"`
 									Td  string `json:"td"`
@@ -471,6 +476,7 @@ type ConsultaDNPPPResponse struct {
 									Tv  string `json:"tv"`
 									Nv  string `json:"nv"`
 									Pnp string `json:"pnp"`
+									Plp string `json:"plp"`
 									Snp string `json:"snp"`
 								} `json:"dir"`
 								Loint struct {
